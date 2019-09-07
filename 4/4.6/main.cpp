@@ -9,12 +9,12 @@ float Pow(float a, int k, int m) { // 1
 	else if (k == 0)
 		return 1;
 	else if (a > 0)
-		return exp(static_cast<float>(k / m) * log(a));
+		return exp(static_cast<float>(k) / m * log(a));
 	else if (m % 2 != 0)
-		return -exp(static_cast<float>(k / m) * log(-a));
+		return -exp(static_cast<float>(k) / m * log(-a));
 }
 
-float Pow( float a, int n) { // 2
+float Pow(float a, int n) { // 2
 	float p; 
 	int i;
 	std::cout << "func 2\t";
@@ -38,7 +38,7 @@ float Pow( float a, int n) { // 2
 	}
 }
 
-float Pow( int a, int n) { // 3
+float Pow(int a, int n) { // 3
 	int i, p;
 	std::cout << "func 3\t";
 
