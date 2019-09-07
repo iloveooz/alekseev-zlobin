@@ -9,7 +9,7 @@ public:
 		this->x = x; 
 		this->y = y;
 	}
-	double abs() {
+	virtual double abs() {
 		return sqrt(x * x + y * y);
 	}
 	void info() {
